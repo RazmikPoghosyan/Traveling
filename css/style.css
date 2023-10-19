@@ -1,0 +1,423 @@
+
+:root{
+    --orange: #ffa500;
+    --grey: #333;
+    --white: #fff;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+}
+
+*::selection{
+    background: var(--orange);
+    color: var(--grey);
+}
+
+.btn{
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: .4rem 1.2rem;
+    border: .2rem solid var(--orange);
+}
+
+.btn:hover{
+    background: rgba(255, 160, 0, .2);
+}
+
+.heading{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.heading span{
+    color: var(--orange);
+    background: rgba(255, 160, 0, .2);
+    font-size: 3rem;
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+}
+
+.heading .space{
+    background: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ............. Header .......... */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--grey);
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+}
+
+header .logo{
+    font-size: 1.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: var(--orange);
+}
+
+header .navbar a{
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-right: .5rem;
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+header .icons i{
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-right: .5rem;
+}
+
+header .icons i:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* ............. Home ............ */
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home video{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* ..............Book.............. */
+
+.book .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book .inner .image{
+    width: 49%;
+}
+
+.book .inner .image img{
+    width: 100%;
+}
+
+.book .inner form{
+    width: 49%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.book .inner form .inputitem h3{
+    color: var(--grey);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.book .inner form .inputitem input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .7rem;
+    font-size: 1.2rem;
+    color: var(--grey);
+    text-transform: none;
+}
+
+.book .inner form .btn{
+    margin-top: .7rem;
+}
+
+.book .inner form .btn:hover{
+    background: rgba(255, 160, 0, .2);
+    color: var(--orange);
+}
+
+/* ..................Packages ................. */
+.packages .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.packages .inner .box{
+    width: 30%;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+}
+
+.packages .inner .box img{
+    width: 100%;
+    height: 19rem;
+}
+
+.packages .inner .box .content{
+    padding: .8rem;
+}
+
+.packages .inner .box .content h3{
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.packages .inner .box .content h3 i{
+    color: var(--orange);
+    font-size: 1.4rem;
+}
+
+.packages .inner .box .content p{
+    font-size: 1.2rem ;
+    color: var(--grey);
+    margin: .2rem 0;
+    font-style: italic;
+}
+
+.packages .inner .box .content .stars{
+    font-size: 1rem;
+    color: var(--orange);
+}
+
+.packages .inner .box .content .price{
+    font-size: 1.1rem;
+    color: var(--grey);
+    margin: .2rem 0;
+}
+
+.packages .inner .box .content .price span{
+    font-size: 1rem;
+    color: #666;
+    text-decoration: line-through;
+}
+
+
+/* ................ Services ............... */
+
+.services .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.services .inner .box{
+    padding: 1rem;
+}
+
+.services .inner .box:hover{
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.services .inner .box i{
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.services .inner .box h2{
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.services .inner .box p{
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+/* .............. Gallery ............ */
+
+.gallery .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery .inner .box{
+    width: 24%;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .inner .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .inner .box .content{
+    position: absolute;
+    top: -120%; left: -120%;
+    text-align: center;
+    padding: 4.5rem;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .inner .box:hover .content{
+    top: 0; left: 0;
+    transition: .3s;
+}
+
+.gallery .inner .box .content h3{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.gallery .inner .box .content p{
+    font-size: 1rem;
+    color: var(--white);
+    padding: .5rem 0;
+}
+
+
+/* .......... Contact ...... */
+
+.contact .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .inner .image{
+    width: 49%;
+}
+
+.contact .inner .image img{
+    width: 100%;
+}
+
+.contact .inner form{
+    width: 49%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.contact .inner form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem 0;
+}
+.contact .inner form .inputbox input{
+    background: rgba(0, 0, 0, .2);
+    width: 49%;
+    font-size: 1.3rem;
+    color: var(--grey);
+    padding: .3rem;
+    text-transform: none;
+}
+.contact .inner form textarea{
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--grey);
+    padding: .3rem;
+    resize: none;
+    text-transform: none;
+}
+
+/* ............... footer ........... */
+
+footer{
+    background: var(--grey);
+}
+
+footer .inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer .inner .box{
+    width: 24%;
+}
+
+footer .inner .box h3{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+footer .inner .box p{
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+footer .inner .box a{
+    font-size: 1.1rem;
+    color: var(--white);
+    display: block;
+}
+
+footer .inner .box a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+footer .created{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--white);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 1rem 0;
+}
+
+footer .created span{
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.none {
+    display: none;
+}
